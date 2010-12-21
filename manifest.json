@@ -1,0 +1,20 @@
+{
+  "name": "Google Moderator Ex",
+  "version": "0.1",
+  "description": "Chrome extension for Google Moderator",
+  "icons": {
+      "48": "icon_48.png"
+  },
+  "content_scripts": [
+  {
+      "matches": ["http://www.google.com/moderator/*"],
+      "js": ["enableHyperlinks.js"],
+      "run_at": "document_end"
+  }
+  ],
+  "permissions": [
+    "http://www.google.com/moderator/*"
+  ],
+  "homepage_url": "https://github.com/drikin/Google-Moderator-Ex"
+}
+
